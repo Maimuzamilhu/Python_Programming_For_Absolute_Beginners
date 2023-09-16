@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "6105811fdda755f1a74c1822"
+  }
+},{
+  "_id": {
+    "$oid": "6105817bdda755f1a74c1823"
+  },
+  "Fname": "Sara",
+  "Lname": "Harison",
+  "Age": 18,
+  "Status": "Passed",
+  "IsValid": true
+},{
+  "_id": {
+    "$oid": "6105825adda755f1a74c1824"
+  },
+  "Fname": "Alex",
+  "Lname": "Peterson",
+  "Age": 16,
+  "Status": "Passed",
+  "IsValid": false
+},{
+  "_id": {
+    "$oid": "61058285dda755f1a74c1825"
+  },
+  "Fname": "Alex",
+  "Lname": "Peterson",
+  "Age": 16,
+  "Status": "Passed",
+  "IsValid": false
+},{
+  "_id": {
+    "$oid": "61058301dda755f1a74c1827"
+  },
+  "Fname": "Alex",
+  "Lname": "Peterson",
+  "Age": 16,
+  "Status": "Passed",
+  "IsValid": false
+},{
+  "_id": {
+    "$oid": "610583eedda755f1a74c1829"
+  },
+  "Fname": "Sara",
+  "Lname": "Alison",
+  "Age": 23,
+  "Married": true,
+  "Children": [
+    {
+      "Name": "Tom",
+      "Gender": "Male",
+      "Age": 13
+    },
+    {
+      "Name": "Sara",
+      "Gender": "Feale",
+      "Age": 10
+    },
+    {
+      "Name": "Mj",
+      "Age": 6
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "610585a3dda755f1a74c182a"
+  },
+  "Fname": "Mary",
+  "LastName": "Alison",
+  "Age": 18,
+  "Books": [
+    "Art",
+    "Math"
+  ]
+},{
+  "_id": {
+    "$oid": "610587f9dda755f1a74c182b"
+  },
+  "Children": [
+    {
+      "Name": "Tom",
+      "Gender": "F",
+      "Age": 12
+    },
+    {
+      "Name": "Sara",
+      "Alias": "Fast"
+    }
+  ]
+}]

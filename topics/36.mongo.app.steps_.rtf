@@ -1,0 +1,127 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Arial;}{\f2\fmodern\fprq1\fcharset0 Courier New;}{\f3\fmodern JetBrains Mono;}{\f4\fmodern\fcharset0 JetBrains Mono;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue0;\red31\green56\blue100;\red192\green0\blue0;\red0\green0\blue128;\red165\green165\blue165;\red155\green0\blue211;\red0\green128\blue128;\red0\green0\blue255;\red102\green0\blue153;\red0\green77\blue187;\red128\green128\blue128;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind5\uc1\viewbksp1{\*\background 
+{\shp{\*\shpinst{\sp{\sn fillType}{\sv 0}}
+{\sp{\sn fillColor}{\sv 14211288}}
+{\sp{\sn fillBackColor}{\sv 0}}
+{\sp{\sn fillFocus}{\sv 0}}
+{\sp{\sn fillBlip}{\sv {\pict{\*\picprop}\wmetafile0 
+}}}}}}
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\qc\cf1\b\f0\fs52\lang9\par
+\cf2 Create \cf1 MongoDB App \cf0 in\cf1  \cf0 Python\par
+
+\pard\ltrpar\widctlpar\sa160\sl252\slmult1\qc\cf3\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\ltrpar\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\fs44 Installing MongoDB module\par
+
+\pard\ltrpar\widctlpar\li1440\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\cf2\b0\f1\fs32\lang1033 => \fs36 pip install pymongo\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\b\f0\fs44\lang9    \par
+   2.\tab  Create a \cf1 sample dataBase \cf3 in MongoDB Compass\par
+
+\pard\ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf2\b0\f1\fs32 Using the MongoDB Compass to create sample Db\lang1033\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf4\b\f2\fs28  \par
+  \cf3\f0\fs44\lang9 3. Use \cf1 Client\cf3  for connecting to sample database\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\cf5\f3\fs36\par
+import \cf2 pymongo \cf5 as \cf2 md\par
+\cf6\f0\fs32\lang1033 #-----------------------\cf2\f3\fs36\lang9\line\f0\lang1033  \cf7\fs32 a. \cf2\f3 client=md.MongoClient(\cf8 "localhost"\cf2 ,\cf9 27017\cf2 )\line\f0  \cf7 b. \cf2\f3 client=md.MongoClient(\cf8 "mongodb://localhost:27017/"\cf2 )\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf3\f0\fs44\lang9   \cf2\f3\fs32\lang1033\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\f0\fs28  \cf3\fs44\lang9   \cf2\b0\f3\fs35\lang1033\line\cf3\b\f0\fs44\lang9    4. Get database list\cf1\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf2\f3\fs32\lang1033 db_list=client.list_database_names()\line\cf5 print\cf2 (\cf8 "\f0 Database\f3  list\f0  \f3 : "\cf2 ,db_list)\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44\lang9\par
+    5. Protecting codes against errors\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf5\f3\fs32 try\cf2 :\b0\line     \cf5\f0\lang1033  \cf2\b\f3\fs36 client=md.MongoClient(\cf8 "localhost"\cf2 ,\cf9 27017\f0 ,\par
+                                      \cf10\f3\fs32 ServerSelectionTimeoutMS\cf2 =\cf9 2000\cf2\fs36 )\cf9\fs24\par
+\cf2\f0\fs36            \f3\fs32 db_list=client.list_database_names()\line\f0             \cf5\f3 print\cf2 (\cf8 "\f0 Database\f3  list\f0  \f3 : "\cf2 ,db_list)\par
+\f4\lang9\line\cf5 except Exception as \cf2 err:\line     \cf5 print\cf2 (\f0\lang1033 "Error: ",\cf5\f3\lang9 str\cf2 (err))\line\par
+\cf5 finally\cf2 :\par
+\f0\fs36\lang1033            \f3\fs32 client.close()\par
+\b0\f0\fs35  \cf8\b\fs32  \cf2\b0\f3\fs35\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\b\f0\fs44\lang9    7. Create a \cf1 Datab\lang1033 a\lang9 se object\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf7\fs32\lang1033 a. \cf2\f3\fs35\lang9 Stu_db=client.get_database(\cf8 "\f0\lang1033 S\f3\lang9 tudents"\cf2 )\par
+\cf7\f0\fs32\lang1033 b. \cf2\f3\fs35 Stu_db = client[\cf8 "\f0 S\f3 tudents"\cf2 ]\par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44\lang9   6. Check if Database exists\cf1\par
+
+\pard\ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf5\f4\fs32\lang1033 if \cf8 "Students" \cf5 in \cf2 db_list:\line     \cf5 print\cf2 (\cf8 "Found \f0 S\f4 tudents"\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\par
+\cf3\f0\fs44\lang9    8. Create a \cf1 Collection object\cf3\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf7\fs35\lang1033 a. \cf2\f3\lang9 StuInfo_Col=Stu_db[\cf8 "\f0\lang1033 S\f3\lang9 tuInfo"\cf2 ]\par
+\cf7\f0\lang1033 b. \cf2\f3\lang9 StuInfo_Col=Stu_db.get_collection(\cf8 "\f0\lang1033 S\f3\lang9 tuInfo"\cf2 )\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\b0\f0\lang1033  \cf3\b\fs44\lang9\par
+   9.Create \cf1 Cursor object\cf11  \cf3 to load all data\par
+
+\pard\box\brdrdash\brdrw0 {\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1440\sa200\sl276\slmult1\cf7\fs35\lang1033 Load all data by cursor:\f3\lang9\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf2 cur=StuInfo_Col.find()\f0\lang1033  or \f3\lang9 cur=StuInfo_Col.find(\{\})\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1800\sa200\sl276\slmult1\cf3\f0\fs44    \cf2\f3\fs36\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44   10.Show the documents in Python App\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf5\f3\fs36 for\f0\lang1033  \f3\lang9  \cf2 doc \cf5 in \cf2 cur:\line     \cf5 print\cf2 (doc)\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44\par
+   11.Sort result documents\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl276\slmult1\cf2\fs35\lang1033    \f3\lang9 cur=StuInfo_Col.find().sort(\cf8 "Fname"\cf2 ,-\cf9 1\cf2 )\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1800\sa200\sl276\slmult1\f0\fs36\lang1033       1=> Ascending => a-z \par
+
+\pard\ltrpar\nowidctlpar\li2160\sa200\sl276\slmult1 -1=> Descending => z-a\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf6 #--------------------------------\f3\lang9\par
+\cf5 for\f0\lang1033  \f3\lang9  \cf2 doc \cf5 in \cf2 cur:\line     \cf5 print\cf2 (doc)\par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44    12.Customize fields to show\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf2\f4\fs30\lang1033 cur=StuInfo_Col.find(\{\},\{\cf8 "_id"\cf2 :\cf9 0\cf2 ,\cf8 "Fname"\cf2 :\cf9 1\cf2 ,\cf8 "Age"\cf2 :\cf9 1\cf2\})     \cf5\fs36\lang9 for\f0\lang1033  \f4\lang9  \cf2 doc \cf5 in \cf2 cur:\line     \f0\lang1033      \cf5\f4\lang9 print\cf2 (doc)\par
+\f3\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44    13.Search the documents \par
+
+\pard\box\brdrdash\brdrw0 {\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1080\sa200\sl276\slmult1\cf7\fs35\lang1033 Find exact value:\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl276\slmult1\cf2\f3 cur=StuInfo_Col.find(\{\cf8 "Fname"\cf2 :\cf8 "Sara"\cf2\})\par
+\cf5\f4\fs36\lang9 for\f0\lang1033  \f3\lang9  \cf2 doc \cf5 in \cf2 cur:\line     \cf5 print\cf2 (doc)\par
+\f4\fs35\lang1033\par
+
+\pard\box\brdrdash\brdrw0 {\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1080\sa200\sl276\slmult1\cf7\f0 Find similar value:\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl276\slmult1\cf2\f3 cur=StuInfo_Col.find(\{\cf8 "Fname"\cf2 :\{\cf8\f0 "\f3 $regex\f0 "\cf2\f3 :\cf8\f0 "\f3 Ma\f0 "\cf2\f3\}\})\cf12\i\line\cf5\i0\f4\fs36\lang9 for\f0\lang1033  \f3\lang9  \cf2 doc \cf5 in \cf2 cur:\line     \cf5 print\cf2 (doc)\par
+\fs35\par
+\cf3\f0\fs44     \cf2\f3\fs36\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44   \par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1     \cf2\f3\fs35\lang1033\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\b0\f4\lang9\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\b\f0\fs44\par
+\par
+
+\pard\ltrpar\nowidctlpar\li1440\sa200\sl276\slmult1\cf7\f1\fs32  \par
+\par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf3\f0\fs44      \fs28\par
+}
+ 

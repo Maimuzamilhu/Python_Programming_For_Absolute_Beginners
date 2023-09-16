@@ -4,3 +4,5 @@ B = input("Enter the Second number :")
 Result = float(A) / float(B)
 
 print("The Answer is :" +str(Result))
+
+#git config core.filemode false

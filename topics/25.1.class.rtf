@@ -1,0 +1,127 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset0 Arial;}{\f2\fmodern\fprq1\fcharset0 Courier New;}{\f3\fmodern\fcharset0 JetBrains Mono;}{\f4\fswiss\fprq2\fcharset178 Calibri;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;\red31\green56\blue100;\red0\green0\blue128;\red0\green0\blue0;\red0\green0\blue255;\red102\green102\blue102;\red192\green0\blue0;\red178\green0\blue178;\red148\green85\blue141;\red0\green128\blue0;\red34\green42\blue53;\red128\green0\blue0;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind5\uc1\viewbksp1{\*\background 
+{\shp{\*\shpinst{\sp{\sn fillType}{\sv 0}}
+{\sp{\sn fillColor}{\sv 14211288}}
+{\sp{\sn fillBackColor}{\sv 0}}
+{\sp{\sn fillFocus}{\sv 0}}
+{\sp{\sn fillBlip}{\sv {\pict{\*\picprop}\wmetafile0 
+}}}}}}
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\qc\cf1\b\f0\fs52\lang9\par
+Class \cf0 in\cf1  \cf0 Python\par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2\fs44    What is Class?\par
+
+\pard\ltrpar\sa160\sl252\slmult1\fs28\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li1080\sa160\sl252\slmult1\fs32  A Python class is used for creating a custom object. \par
+{\pntext\f5\'B7\tab}We can add functions and attibutes to function\par
+
+\pard\ltrpar\sa160\sl252\slmult1\fs28\par
+
+\pard\ltrpar\widctlpar\sa160\sl252\slmult1\qc\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1 This tutorial includes:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\ltrpar\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\fs44 Defining simple class\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\li720\sl360\slmult1\cf3\b0\f1\fs28\lang1033         \fs35 class \cf4 test():\line              Age=\cf5 10\par
+
+\pard\ltrpar\widctlpar\li720\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\cf4\f2\fs28\par
+\par
+\fs35\par
+
+\pard\ltrpar\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\cf2\b\f0\fs44\lang9 2.\tab Calling a Class\f1\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\cf6\b0\fs36      \fs32 #-------defining a class ------------------\cf4\lang1033\par
+     \cf3\b class \cf4\b0 test():\line                 Age=\cf5 10 \cf6 # => property or attribute\cf5\par
+
+\pard\ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\cf6\lang9      #-------calling the class ------------------\par
+\cf2\b\fs28        MyClass= \cf4\b0\fs32\lang1033 test\cf7\b ()\fs28\par
+       \cf4 print( \cf2\lang9 MyClass\cf4\lang1033 .Age )  \cf7\f2\fs32 = > 10\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\fs28\par
+\par
+  \cf2\f0\fs44\lang9 3. Using   '__init__()' Function in class\par
+
+\pard\box\brdrdash\brdrw0 {\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1080\sa200\sl276\slmult1\cf4\b0\fs36 This function always executed when the class is being started.\cf3\lang1033       \par
+{\pntext\f5\'B7\tab}\cf4 Use the __init__() function to assign values to  properties or execute other operation at class startup.\par
+{\pntext\f5\'B7\tab}\b self \b0 => means this class and is the first parameter of each class.\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\sa200\sl276\slmult1\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\cf6\f1\lang9      \fs32 #-------defining a class ------------------\cf4\f0\lang1033\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1440\sa200\sl360\slmult1\cf3\b\f1 class \cf4\b0 test():\line      \cf3\b def \cf8\b0 __init__\cf4 (\cf9 self\cf4 , UserFullName ):\line                \cf9 self\cf4 .\b FullName\b0 =UserFullName\par
+\line\cf6\lang9 #-------calling the class ------------------\cf4\lang1033\line cl=test(\cf5  \cf4  \cf10\b "Sara Miller" \cf4\b0 )\line\cf3 print\cf4 (cl.\b FullName\b0 )\line\cf3  \cf4   \f2\fs28\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2\b\f0\lang9\par
+
+\pard\ltrpar\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\fs44 4.\tab Add method to a Class\par
+\b0\fs36      Each function in a class is a method of it.\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\sa200\sl276\slmult1\cf6\f1\fs32          #-------defining a class ------------------\cf4\f0\lang1033\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl360\slmult1\cf3\b\f1\lang9  class \cf4\b0 test():\line      \cf3\b def \cf8\b0 __init__\cf4 (\cf9 self\cf4 , UserFullName ):\line              \cf9 self\cf4 .FullName=UserFullName\line      \cf6 #------- add new method------\cf4\line      \cf3\b def \cf4\b0 SayHi(\cf9 self\cf4 ):\line         \cf3 print\cf4 (\cf10\b "Hi!  " \cf4\b0 + \cf9 self\cf4 .Fullname)\par
+\line\cf6 #-------calling the method in class ------------------\cf4\f3\line\f1 cl=test(\cf5  \cf4  \cf10\b "Sara Miller" \cf4\b0 )\line cl.SayHi() \cf6 # => method in class \par
+\par
+
+\pard\ltrpar\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\cf11\b\f0\fs28  \cf2\fs44 5. Python Inheritance\b0\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1080\sa200\sl276\slmult1\cf12\b\fs36 Inheritance \cf11\b0 allows us to define a class that inherits all the methods and properties from another class.\fs28\par
+{\pntext\f5\'B7\tab}\cf12\b\fs36 Parent class \cf4 (base class) \b0 is \cf11 the class being inherited from\b\fs28\par
+{\pntext\f5\'B7\tab}\cf12\fs36 Child class \cf4 (\cf11 derived )\cf1\b0  \cf11 is the class that inherits from another class.\b\fs28\par
+
+\pard\ltrpar\nowidctlpar\widctlpar\li1080\sa200\sl276\slmult1\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\sa200\sl276\slmult1\cf6\b0\f1\fs32             #-------defining a \cf12\b parent class \cf6\b0 ------------------\cf4\f0\lang1033\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl360\slmult1\cf3\b\f1\lang9  class \cf4 parent\cf3 _\cf4\b0 test():\line      \cf3\b def \cf8\b0 __init__\cf4 (\cf9 self\cf4 ,  UserFullName ): \line                \cf9 self\cf4 .FullName=UserFullName\line      \cf6 #------- add new method------\cf4\line      \cf3\b def \cf4\b0 SayHi(\cf9 self\cf4 ):\line            \cf3 print\cf4 (\cf10\b "Hi! my name is " \cf4\b0 + \cf9 self\cf4 .Fullname)\par
+   \par
+\cf6 #-------defining a \cf12\b chid class \cf6\b0 ------------------\par
+\cf3\b  class \cf4 child_\b0 test( \cf12 parent_\b test \cf4\b0 ):\line             \cf3 pass\cf4\par
+\line\cf6 #-------calling the method in parent class ------------------\cf4\f3\line\f1 cl=child_test(\cf5  \cf4  \cf10\b "Sara Miller" \cf4\b0 )\line cl.SayHi() \cf6 # => method in class \par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf7\b\f2\fs28\lang1033   \cf2\f0\fs44\lang9 3. Using the super() Function\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\nowidctlpar\fi-360\li1080\sa200\sl276\slmult1\cf4\b0\fs36 The super() function  will make the child class to get all the methods & properties from its parent:\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li1080\sa160\sl252\slmult1 Super class means the parent class!\par
+
+\pard\ltrpar\sa160\sl252\slmult1\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\sa200\sl276\slmult1\cf6\f1\fs32          #-------defining a \cf12\b parent class \cf6\b0 ------------------\cf4\f0\lang1033\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl360\slmult1\cf3\b\f1\lang9 class \cf4 parent\cf3 _\cf4\b0 test():\line      \cf3\b def \cf8\b0 __init__\cf4 (\cf9 self\cf4 ,  UserFullName ): \line            \cf9 self\cf4 .FullName=UserFullName\line      \cf6 #------- add new method------\cf4\line      \cf3\b def \cf4\b0 SayHi_Parent(\cf9 self\cf4 ):\line            \cf3 print\cf4 (\cf10\b "Hi! my name is " \cf4\b0 + \cf9 self\cf4 .FullName)\par
+
+\pard\ltrpar\nowidctlpar\li720\sa200\sl276\slmult1\f0\fs36\par
+\cf6\f1\fs32 #-------defining a \cf12\b chid class \cf6\b0 ------------------\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li720\sa200\sl360\slmult1\cf3 class \cf4 test_child(parent_test):\line     \cf3 def \cf8 __init__\cf4 (\cf9 self \cf4 ,  UserFullName):\line         \cf3 super\cf4 (test_child, \cf9 self\cf4 ).\cf8 __init__\cf4 ( UserFullName)\line\line     \cf3 def \cf4 SayHi_Child(\cf9 self\cf4 ):\line          \cf3 super\cf4 ().SayHi_Parent()\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\cf2\b\f0\fs44\par
+
+\pard\box\brdrdash\brdrw0 \ltrpar\nowidctlpar\li1080\sa200\sl360\slmult1\cf6\b0\f1\fs32 #-------calling the method  parent class ------------------\cf4\f3\line\f1 cl=test_child(\cf5  \cf4  \cf10\b "Sara Miller" \cf4\b0 )\line cl.SayHi_Parent() \cf6 # => method in parent class \par
+\cf4 cl.SayHi_Child() \cf6 # => method in child class \par
+
+\pard\ltrpar\nowidctlpar\widctlpar\li1080\sa200\sl276\slmult1\cf11\b\f0\fs28\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\ltrpar\nowidctlpar\sa200\sl276\slmult1\f4\rtlch\lang1065  \cf2\f0\ltrch\lang9\par
+}
+ 
